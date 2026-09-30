@@ -1,2 +1,0 @@
-run_date,companies_scanned,companies_failed,jobs_fetched,israel_matched,judged_keyword,judged_llm,judged_cache,judged_failed,judged_skipped,merged_copy,accepted,after_merge,store_records,open,closed_today,purged,alive,board_rendered,email_new,first_scan,email_overflow,sent_total
-2026-09-29,1493,6,42682,10004,9057,0,0,0,0,946,431,356,395,255,,,263,228,6,3,0,213
