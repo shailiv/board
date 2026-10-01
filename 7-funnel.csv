@@ -1,0 +1,5 @@
+run_date,companies_scanned,companies_failed,jobs_fetched,israel_matched,judged_keyword,judged_llm,judged_cache,judged_failed,judged_skipped,merged_copy,accepted,after_merge,store_records,open,closed_today,purged,alive,board_rendered,email_new,first_scan,email_overflow,sent_total
+2026-09-27,1481,3,36900,4134,3996,0,0,0,0,137,148,143,226,224,,,143,138,21,15,0,187
+2026-09-28,1481,10,42140,10175,9176,0,0,0,0,998,421,340,369,289,49,,298,250,23,15,0,207
+2026-09-30,1510,5,43726,10195,9300,0,0,0,0,894,335,272,405,203,,,256,220,5,1,0,226
+2026-10-01,1510,4,43644,9919,9104,0,0,0,0,814,363,298,412,211,,,216,185,5,1,0,232
