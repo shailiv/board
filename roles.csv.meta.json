@@ -3,9 +3,9 @@
  "download_url": null,
  "raw_url": null,
  "published_on_pages": false,
- "generated_at": "2026-10-15T08:27:06Z",
+ "generated_at": "2026-10-15T10:47:11Z",
  "run_date": "2026-10-15",
- "rows": 293,
+ "rows": 292,
  "one_row_per": "role — an opening at one employer under one title, kept forever once seen",
  "window": {
   "days": 90,
@@ -18,7 +18,7 @@
  },
  "classifier_contract": {
   "live": "v3.0a439b16",
-  "rows_current": 293,
+  "rows_current": 292,
   "rows_stale": 0,
   "rows_unknown": 0,
   "note": "rows_unknown is not a defect in the row: it is a cell stamped before the contract was recorded (2026-09-11), or a verdict served from the classifier cache without the seam reporting which contract answered. It means 'we cannot say', which is the honest reading and not 'stale'."
@@ -29,9 +29,9 @@
   "renamed_note": "a role_id changes only when a card-blob title is canonicalised into the role's name; the record keeps its first_seen, episodes, emailed history and classifier verdict",
   "by_status": {
    "closed": 129,
-   "open": 211,
+   "open": 210,
    "superseded": 2,
-   "withdrawn": 168
+   "withdrawn": 169
   },
   "earliest_first_seen": "2026-08-16",
   "earliest_recorded_run": "2026-09-27",
@@ -40,7 +40,7 @@
  "excluded": {
   "superseded": 2,
   "purged": 0,
-  "withdrawn": 168,
+  "withdrawn": 169,
   "outside_window": 0,
   "undatable": 0,
   "note": "superseded = the same posting also fetched under a second company name, kept once. purged = the COMPANY was never an employer (a registry row that points at an aggregator; a name intake rejected as an agency). withdrawn = the employer is real but THIS posting was never in scope (not in Israel, or not this employer's) — it was published in error and is listed under `removed` with its reason and the days it was public. Rows that aged out of the window are not excluded: they are in roles_archive.csv."
@@ -2016,6 +2016,19 @@
    }
   },
   {
+   "role_id": "yotpo|director of data",
+   "company": "Yotpo",
+   "title": "Director of Data",
+   "status": "withdrawn",
+   "reason": "Main delivered output is data engineering/platform architecture, infrastructure and scalable data products, with no stated own reporting or analytical output. Business Intelligence occurs as a preferred support domain. Current exact official Yotpo8143530 body reviewed; excluded under existing own-output analytics/engineering boundary, not for management title or optional AI-tool experience.",
+   "on": "2026-10-15",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-15"
+   }
+  },
+  {
    "role_id": "yuval hr talent agency and advisory|senior bi developer",
    "company": "Yuval HR - Talent agency and advisory",
    "title": "Senior BI Developer",
@@ -2162,11 +2175,11 @@
   "published_on_pages": false
  },
  "reconciliation": {
-  "rows": 293,
+  "rows": 292,
   "archived": 0,
   "superseded": 2,
   "purged": 0,
-  "withdrawn": 168,
+  "withdrawn": 169,
   "outside_window": 0,
   "undatable": 0,
   "unreadable": 0,
@@ -2216,7 +2229,7 @@
    "description_blocker"
   ],
   "quality": {
-   "jd": 293,
+   "jd": 292,
    "snippet": 0,
    "none": 0,
    "unmeasured": 0,
@@ -2298,7 +2311,7 @@
   },
   "closed_on": {
    "doc": "The day we recorded it closed. Empty while open.",
-   "nulls": 185
+   "nulls": 184
   },
   "emailed": {
    "doc": "true if this role went out in a daily digest email.",
@@ -2306,7 +2319,7 @@
   },
   "emailed_on": {
    "doc": "The date it was first emailed. Empty if never emailed.",
-   "nulls": 122
+   "nulls": 121
   },
   "episodes": {
    "doc": "How many separate spells we have seen this role open (a reappearance after an absence starts a new one).",
@@ -2318,7 +2331,7 @@
   },
   "repost_dates": {
    "doc": "The posted_date values those bumps landed on, separated by ';'.",
-   "nulls": 226
+   "nulls": 225
   },
   "sources": {
    "doc": "Which fetchers saw it (greenhouse, comeet, scrape, ...), separated by ';'.",
@@ -2339,7 +2352,7 @@
   },
   "years_experience": {
    "doc": "Years of experience asked for, read from the DESCRIPTION text. Empty when the text does not say.",
-   "nulls": 72
+   "nulls": 71
   },
   "family": {
    "doc": "Role family, from title first and the opening of the description second.",
@@ -2366,7 +2379,7 @@
   },
   "degree_level": {
    "doc": "Highest degree the posting requires or prefers.",
-   "nulls": 137,
+   "nulls": 136,
    "enum": {
     "PhD": "highest degree the posting names",
     "MSc": "highest degree the posting names",
@@ -2375,7 +2388,7 @@
   },
   "degree_status": {
    "doc": "Whether that degree is required or merely preferred.",
-   "nulls": 137,
+   "nulls": 136,
    "enum": {
     "required": "stated as a requirement",
     "preferred": "stated as an advantage"
@@ -2383,7 +2396,7 @@
   },
   "degree_fields": {
    "doc": "Fields of study named alongside it, separated by ';'.",
-   "nulls": 181,
+   "nulls": 180,
    "enum": {
     "CS": "field of study named alongside the degree",
     "Industrial Eng.": "field of study named alongside the degree",
@@ -2404,7 +2417,7 @@
     "AI for efficiency": "Expected to use AI tools (Copilot, ChatGPT, Cursor…) to work faster",
     "AI for automation": "Using AI to automate processes and workflows",
     "Building with AI": "Building AI/LLM-powered features, models or data products",
-    "AI (unspecified)": "AI named as a requirement without a stated purpose"
+    "AI (unspecified)": "AI mentioned without a specific use identified"
    }
   },
   "skills": {
@@ -2450,7 +2463,7 @@
   },
   "description_blocker": {
    "doc": "Why a weak text (description_quality snippet/none) is structurally hard to complete, or empty. Recorded verdicts (jd-text's matched.jd_why, 'structural:*') verbatim; else derived: 'gone' (the posting 404s on the employer's own board), 'unfillable:<why>' (a host no rung we own can read), 'listing-page' (the only address we hold is a shared listing, not the posting's own). Under the live policy (meta description_text.blocked.policy — 'exclude' since the operator's 2026-09-01 ruling) a blocked row is excluded from this file with its reason counted in the meta; a weak row with NO blocker is pending a fill and stays; the archive keeps history either way.",
-   "nulls": 293
+   "nulls": 292
   },
   "sector": {
    "doc": "Company sector (firmographics).",
@@ -2520,7 +2533,7 @@
   },
   "skills_bi": {
    "doc": "Skills of category 'bi' only, separated by ';' — group by this without parsing.",
-   "nulls": 138
+   "nulls": 137
   },
   "skills_query": {
    "doc": "Skills of category 'query' only, separated by ';' — group by this without parsing.",
@@ -2532,23 +2545,23 @@
   },
   "skills_pa": {
    "doc": "Skills of category 'pa' only, separated by ';' — group by this without parsing.",
-   "nulls": 239
+   "nulls": 246
   },
   "skills_prog": {
    "doc": "Skills of category 'prog' only, separated by ';' — group by this without parsing.",
-   "nulls": 175
+   "nulls": 174
   },
   "skills_method": {
    "doc": "Skills of category 'method' only, separated by ';' — group by this without parsing.",
-   "nulls": 106
+   "nulls": 105
   },
   "skills_cloud": {
    "doc": "Skills of category 'cloud' only, separated by ';' — group by this without parsing.",
-   "nulls": 257
+   "nulls": 256
   },
   "skills_lang": {
    "doc": "Skills of category 'lang' only, separated by ';' — group by this without parsing.",
-   "nulls": 189
+   "nulls": 188
   }
  }
 }
