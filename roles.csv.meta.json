@@ -3,22 +3,22 @@
  "download_url": "https://shailiv.github.io/board/roles.csv",
  "raw_url": "https://shailiv.github.io/board/roles.csv",
  "published_on_pages": true,
- "generated_at": "2026-10-16T12:42:58Z",
- "run_date": "2026-10-16",
- "rows": 288,
+ "generated_at": "2026-10-17T05:13:12Z",
+ "run_date": "2026-10-17",
+ "rows": 289,
  "one_row_per": "role — an opening at one employer under one title, kept forever once seen",
  "window": {
   "days": 90,
   "basis": "last_seen",
-  "start": "2026-07-19",
-  "end": "2026-10-16",
-  "rule": "2026-07-19 <= last_seen <= 2026-10-16, both inclusive (90 days) — the role was seen open on its employer's own careers board on some day in that range",
+  "start": "2026-07-20",
+  "end": "2026-10-17",
+  "rule": "2026-07-20 <= last_seen <= 2026-10-17, both inclusive (90 days) — the role was seen open on its employer's own careers board on some day in that range",
   "fully_covered": false,
-  "note": "ASPIRATIONAL: this store's earliest observation is 2026-08-16, which is AFTER the window start 2026-07-19. Any absence of roles before 2026-08-16 is OUR blindness, not the market's — the pipeline was not yet watching. Do not read the shape of the first days as a trend."
+  "note": "ASPIRATIONAL: this store's earliest observation is 2026-08-16, which is AFTER the window start 2026-07-20. Any absence of roles before 2026-08-16 is OUR blindness, not the market's — the pipeline was not yet watching. Do not read the shape of the first days as a trend."
  },
  "classifier_contract": {
   "live": "v3.0a439b16",
-  "rows_current": 288,
+  "rows_current": 289,
   "rows_stale": 0,
   "rows_unknown": 0,
   "note": "rows_unknown is not a defect in the row: it is a cell stamped before the contract was recorded (2026-09-11), or a verdict served from the classifier cache without the seam reporting which contract answered. It means 'we cannot say', which is the honest reading and not 'stale'."
@@ -28,8 +28,8 @@
   "renamed": [],
   "renamed_note": "a role_id changes only when a card-blob title is canonicalised into the role's name; the record keeps its first_seen, episodes, emailed history and classifier verdict",
   "by_status": {
-   "closed": 130,
-   "open": 205,
+   "closed": 131,
+   "open": 204,
    "superseded": 2,
    "withdrawn": 178
   },
@@ -2286,13 +2286,13 @@
  "archive": {
   "file": "roles_archive.csv",
   "rows": 0,
-  "rule": "status open or closed AND last_seen < 2026-07-19 — every role the window has aged out, same columns, regenerated whole from the ledger each run",
+  "rule": "status open or closed AND last_seen < 2026-07-20 — every role the window has aged out, same columns, regenerated whole from the ledger each run",
   "raw_url": null,
   "download_url": null,
   "published_on_pages": false
  },
  "reconciliation": {
-  "rows": 288,
+  "rows": 289,
   "archived": 0,
   "superseded": 2,
   "purged": 0,
@@ -2301,7 +2301,7 @@
   "undatable": 0,
   "unreadable": 0,
   "blocked_excluded": 7,
-  "pending_excluded": 32,
+  "pending_excluded": 31,
   "unjudged_refused": 8,
   "store_records": 515,
   "identity": "rows + archived + superseded + purged + withdrawn + outside_window + undatable + unreadable + blocked_excluded + pending_excluded + unjudged_refused == store_records",
@@ -2346,7 +2346,7 @@
    "description_blocker"
   ],
   "quality": {
-   "jd": 288,
+   "jd": 289,
    "snippet": 0,
    "none": 0,
    "unmeasured": 0,
@@ -2355,7 +2355,7 @@
   "blocked": {
    "policy": "exclude",
    "structural": 7,
-   "pending": 32,
+   "pending": 31,
    "listing-page": 6,
    "unfillable:js-shell": 1
   }
@@ -2436,7 +2436,7 @@
   },
   "emailed_on": {
    "doc": "The date it was first emailed. Empty if never emailed.",
-   "nulls": 116
+   "nulls": 117
   },
   "episodes": {
    "doc": "How many separate spells we have seen this role open (a reappearance after an absence starts a new one).",
@@ -2448,7 +2448,7 @@
   },
   "repost_dates": {
    "doc": "The posted_date values those bumps landed on, separated by ';'.",
-   "nulls": 221
+   "nulls": 219
   },
   "sources": {
    "doc": "Which fetchers saw it (greenhouse, comeet, scrape, ...), separated by ';'.",
@@ -2496,7 +2496,7 @@
   },
   "degree_level": {
    "doc": "Highest degree the posting requires or prefers.",
-   "nulls": 133,
+   "nulls": 134,
    "enum": {
     "PhD": "highest degree the posting names",
     "MSc": "highest degree the posting names",
@@ -2505,7 +2505,7 @@
   },
   "degree_status": {
    "doc": "Whether that degree is required or merely preferred.",
-   "nulls": 133,
+   "nulls": 134,
    "enum": {
     "required": "stated as a requirement",
     "preferred": "stated as an advantage"
@@ -2513,7 +2513,7 @@
   },
   "degree_fields": {
    "doc": "Fields of study named alongside it, separated by ';'.",
-   "nulls": 178,
+   "nulls": 179,
    "enum": {
     "CS": "field of study named alongside the degree",
     "Industrial Eng.": "field of study named alongside the degree",
@@ -2529,7 +2529,7 @@
   },
   "ai": {
    "doc": "How the posting expects AI to be used, separated by ';'. Empty when AI is not mentioned.",
-   "nulls": 198,
+   "nulls": 199,
    "enum": {
     "AI for efficiency": "Expected to use AI tools (Copilot, ChatGPT, Cursor…) to work faster",
     "AI for automation": "Using AI to automate processes and workflows",
@@ -2580,7 +2580,7 @@
   },
   "description_blocker": {
    "doc": "Why a weak text (description_quality snippet/none) is structurally hard to complete, or empty. Recorded verdicts (jd-text's matched.jd_why, 'structural:*') verbatim; else derived: 'gone' (the posting 404s on the employer's own board), 'unfillable:<why>' (a host no rung we own can read), 'listing-page' (the only address we hold is a shared listing, not the posting's own). Under the live policy (meta description_text.blocked.policy — 'exclude' since the operator's 2026-09-01 ruling) a blocked row is excluded from this file with its reason counted in the meta; a weak row with NO blocker is pending a fill and stays; the archive keeps history either way.",
-   "nulls": 288
+   "nulls": 289
   },
   "sector": {
    "doc": "Company sector (firmographics).",
@@ -2662,7 +2662,7 @@
   },
   "skills_pa": {
    "doc": "Skills of category 'pa' only, separated by ';' — group by this without parsing.",
-   "nulls": 243
+   "nulls": 244
   },
   "skills_prog": {
    "doc": "Skills of category 'prog' only, separated by ';' — group by this without parsing.",
@@ -2674,11 +2674,11 @@
   },
   "skills_cloud": {
    "doc": "Skills of category 'cloud' only, separated by ';' — group by this without parsing.",
-   "nulls": 255
+   "nulls": 256
   },
   "skills_lang": {
    "doc": "Skills of category 'lang' only, separated by ';' — group by this without parsing.",
-   "nulls": 183
+   "nulls": 184
   }
  }
 }
