@@ -1,20 +1,20 @@
 {
  "dataset": "roles.csv",
- "download_url": "https://shailiv.github.io/board/roles.csv",
- "raw_url": "https://shailiv.github.io/board/roles.csv",
- "published_on_pages": true,
- "generated_at": "2026-10-17T05:13:12Z",
- "run_date": "2026-10-17",
+ "download_url": null,
+ "raw_url": null,
+ "published_on_pages": false,
+ "generated_at": "2026-10-18T02:56:39Z",
+ "run_date": "2026-10-18",
  "rows": 289,
  "one_row_per": "role — an opening at one employer under one title, kept forever once seen",
  "window": {
   "days": 90,
   "basis": "last_seen",
-  "start": "2026-07-20",
-  "end": "2026-10-17",
-  "rule": "2026-07-20 <= last_seen <= 2026-10-17, both inclusive (90 days) — the role was seen open on its employer's own careers board on some day in that range",
+  "start": "2026-07-21",
+  "end": "2026-10-18",
+  "rule": "2026-07-21 <= last_seen <= 2026-10-18, both inclusive (90 days) — the role was seen open on its employer's own careers board on some day in that range",
   "fully_covered": false,
-  "note": "ASPIRATIONAL: this store's earliest observation is 2026-08-16, which is AFTER the window start 2026-07-20. Any absence of roles before 2026-08-16 is OUR blindness, not the market's — the pipeline was not yet watching. Do not read the shape of the first days as a trend."
+  "note": "ASPIRATIONAL: this store's earliest observation is 2026-08-16, which is AFTER the window start 2026-07-21. Any absence of roles before 2026-08-16 is OUR blindness, not the market's — the pipeline was not yet watching. Do not read the shape of the first days as a trend."
  },
  "classifier_contract": {
   "live": "v3.0a439b16",
@@ -28,8 +28,8 @@
   "renamed": [],
   "renamed_note": "a role_id changes only when a card-blob title is canonicalised into the role's name; the record keeps its first_seen, episodes, emailed history and classifier verdict",
   "by_status": {
-   "closed": 131,
-   "open": 204,
+   "closed": 132,
+   "open": 203,
    "superseded": 2,
    "withdrawn": 178
   },
@@ -2286,7 +2286,7 @@
  "archive": {
   "file": "roles_archive.csv",
   "rows": 0,
-  "rule": "status open or closed AND last_seen < 2026-07-20 — every role the window has aged out, same columns, regenerated whole from the ledger each run",
+  "rule": "status open or closed AND last_seen < 2026-07-21 — every role the window has aged out, same columns, regenerated whole from the ledger each run",
   "raw_url": null,
   "download_url": null,
   "published_on_pages": false
@@ -2428,7 +2428,7 @@
   },
   "closed_on": {
    "doc": "The day we recorded it closed. Empty while open.",
-   "nulls": 177
+   "nulls": 176
   },
   "emailed": {
    "doc": "true if this role went out in a daily digest email.",
@@ -2662,7 +2662,7 @@
   },
   "skills_pa": {
    "doc": "Skills of category 'pa' only, separated by ';' — group by this without parsing.",
-   "nulls": 244
+   "nulls": 243
   },
   "skills_prog": {
    "doc": "Skills of category 'prog' only, separated by ';' — group by this without parsing.",
