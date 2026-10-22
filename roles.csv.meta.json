@@ -3,44 +3,44 @@
  "download_url": null,
  "raw_url": null,
  "published_on_pages": false,
- "generated_at": "2026-10-19T04:16:31Z",
- "run_date": "2026-10-19",
- "rows": 290,
+ "generated_at": "2026-10-22T01:38:43Z",
+ "run_date": "2026-10-22",
+ "rows": 326,
  "one_row_per": "role — an opening at one employer under one title, kept forever once seen",
  "window": {
   "days": 90,
   "basis": "last_seen",
-  "start": "2026-07-22",
-  "end": "2026-10-19",
-  "rule": "2026-07-22 <= last_seen <= 2026-10-19, both inclusive (90 days) — the role was seen open on its employer's own careers board on some day in that range",
+  "start": "2026-07-25",
+  "end": "2026-10-22",
+  "rule": "2026-07-25 <= last_seen <= 2026-10-22, both inclusive (90 days) — the role was seen open on its employer's own careers board on some day in that range",
   "fully_covered": false,
-  "note": "ASPIRATIONAL: this store's earliest observation is 2026-08-16, which is AFTER the window start 2026-07-22. Any absence of roles before 2026-08-16 is OUR blindness, not the market's — the pipeline was not yet watching. Do not read the shape of the first days as a trend."
+  "note": "ASPIRATIONAL: this store's earliest observation is 2026-08-16, which is AFTER the window start 2026-07-25. Any absence of roles before 2026-08-16 is OUR blindness, not the market's — the pipeline was not yet watching. Do not read the shape of the first days as a trend."
  },
  "classifier_contract": {
   "live": "v3.0a439b16",
-  "rows_current": 290,
+  "rows_current": 326,
   "rows_stale": 0,
   "rows_unknown": 0,
   "note": "rows_unknown is not a defect in the row: it is a cell stamped before the contract was recorded (2026-09-11), or a verdict served from the classifier cache without the seam reporting which contract answered. It means 'we cannot say', which is the honest reading and not 'stale'."
  },
  "store": {
-  "records": 516,
+  "records": 554,
   "renamed": [],
   "renamed_note": "a role_id changes only when a card-blob title is canonicalised into the role's name; the record keeps its first_seen, episodes, emailed history and classifier verdict",
   "by_status": {
-   "closed": 134,
-   "open": 202,
-   "superseded": 2,
-   "withdrawn": 178
+   "closed": 169,
+   "open": 200,
+   "superseded": 3,
+   "withdrawn": 182
   },
   "earliest_first_seen": "2026-08-16",
   "earliest_recorded_run": "2026-09-28",
   "retention": "nothing is ever deleted; a wrong row becomes superseded or purged and keeps its line"
  },
  "excluded": {
-  "superseded": 2,
+  "superseded": 3,
   "purged": 0,
-  "withdrawn": 178,
+  "withdrawn": 182,
   "outside_window": 0,
   "undatable": 0,
   "note": "superseded = the same posting also fetched under a second company name, kept once. purged = the COMPANY was never an employer (a registry row that points at an aggregator; a name intake rejected as an agency). withdrawn = the employer is real but THIS posting was never in scope (not in Israel, or not this employer's) — it was published in error and is listed under `removed` with its reason and the days it was public. Rows that aged out of the window are not excluded: they are in roles_archive.csv."
@@ -315,13 +315,10 @@
    "company": "aQurate",
    "title": "DATA analyst",
    "status": "withdrawn",
-   "reason": "Data-system implementation for clients, not analysis producing business insights.",
-   "on": "2026-09-29",
+   "reason": "out of scope on condition (4) (docs/decisions/2026-09-01-the-posting-must-describe-a-workplace.md): a data-services firm's posting carrying a requisition number and a region as its only workplace, describing no product, team or system of its own, with client systems (SAP, AS400) as the advantage - two of the three tells and no workplace described.",
+   "on": "2026-09-11",
    "by": "human",
-   "published_in_roles_csv": {
-    "from": "2026-09-28",
-    "to": "2026-09-29"
-   }
+   "published_in_roles_csv": null
   },
   {
    "role_id": "arpeely|data scientist team lead",
@@ -784,6 +781,19 @@
    }
   },
   {
+   "role_id": "eon|senior research scientist ai data systems",
+   "company": "Eon",
+   "title": "Senior Research Scientist, AI & Data Systems",
+   "status": "withdrawn",
+   "reason": "not analytics: research-scientist track - duties are publishing peer-reviewed research and patents across query engines/storage/IR-RAG/LLM-eval; completed PhD and sustained publication record required",
+   "on": "2026-10-20",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-20",
+    "to": "2026-10-20"
+   }
+  },
+  {
    "role_id": "etoro|aml analyst",
    "company": "eToro",
    "title": "AML Analyst",
@@ -1068,6 +1078,19 @@
    "published_in_roles_csv": {
     "from": "2026-09-29",
     "to": "2026-09-29"
+   }
+  },
+  {
+   "role_id": "istra research|quantitative data scientist",
+   "company": "Istra Research",
+   "title": "Quantitative Data Scientist",
+   "status": "withdrawn",
+   "reason": "not analytics: HFT quant-research track - duties are researching/developing trading strategies and algorithms (ML/signal processing/data mining) at an algo-trading firm; summa cum laude + C++ profile",
+   "on": "2026-10-20",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-20"
    }
   },
   {
@@ -1433,6 +1456,32 @@
    "published_in_roles_csv": {
     "from": "2026-10-08",
     "to": "2026-10-08"
+   }
+  },
+  {
+   "role_id": "no company name|customer business analyst",
+   "company": "no company name",
+   "title": "Customer Business Analyst",
+   "status": "withdrawn",
+   "reason": "Employer identity undisclosed and cannot be vetted (posting-wide application of the 2026-10-08 verdict on LinkedIn posting 4475425629).",
+   "on": "2026-10-19",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-14",
+    "to": "2026-10-19"
+   }
+  },
+  {
+   "role_id": "no company name|customer success manager business analytics strategy",
+   "company": "no company name",
+   "title": "Customer Success Manager – Business Analytics & Strategy",
+   "status": "withdrawn",
+   "reason": "Employer identity undisclosed and cannot be vetted (posting-wide application of the 2026-10-08 verdict on LinkedIn posting 4475425629).",
+   "on": "2026-10-19",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-09",
+    "to": "2026-10-19"
    }
   },
   {
@@ -2286,24 +2335,24 @@
  "archive": {
   "file": "roles_archive.csv",
   "rows": 0,
-  "rule": "status open or closed AND last_seen < 2026-07-22 — every role the window has aged out, same columns, regenerated whole from the ledger each run",
+  "rule": "status open or closed AND last_seen < 2026-07-25 — every role the window has aged out, same columns, regenerated whole from the ledger each run",
   "raw_url": null,
   "download_url": null,
   "published_on_pages": false
  },
  "reconciliation": {
-  "rows": 290,
+  "rows": 326,
   "archived": 0,
-  "superseded": 2,
+  "superseded": 3,
   "purged": 0,
-  "withdrawn": 178,
+  "withdrawn": 182,
   "outside_window": 0,
   "undatable": 0,
   "unreadable": 0,
   "blocked_excluded": 7,
-  "pending_excluded": 31,
+  "pending_excluded": 28,
   "unjudged_refused": 8,
-  "store_records": 516,
+  "store_records": 554,
   "identity": "rows + archived + superseded + purged + withdrawn + outside_window + undatable + unreadable + blocked_excluded + pending_excluded + unjudged_refused == store_records",
   "holds": true
  },
@@ -2346,7 +2395,7 @@
    "description_blocker"
   ],
   "quality": {
-   "jd": 290,
+   "jd": 326,
    "snippet": 0,
    "none": 0,
    "unmeasured": 0,
@@ -2355,7 +2404,7 @@
   "blocked": {
    "policy": "exclude",
    "structural": 7,
-   "pending": 31,
+   "pending": 28,
    "listing-page": 6,
    "unfillable:js-shell": 1
   }
@@ -2399,7 +2448,7 @@
   },
   "posted_date": {
    "doc": "The date the EMPLOYER states the role was posted. Empty when the board publishes none.",
-   "nulls": 20
+   "nulls": 19
   },
   "first_seen": {
    "doc": "The first day this pipeline ever saw the role, across all of its spells. Not a posting date.",
@@ -2428,7 +2477,7 @@
   },
   "closed_on": {
    "doc": "The day we recorded it closed. Empty while open.",
-   "nulls": 175
+   "nulls": 184
   },
   "emailed": {
    "doc": "true if this role went out in a daily digest email.",
@@ -2436,7 +2485,7 @@
   },
   "emailed_on": {
    "doc": "The date it was first emailed. Empty if never emailed.",
-   "nulls": 118
+   "nulls": 150
   },
   "episodes": {
    "doc": "How many separate spells we have seen this role open (a reappearance after an absence starts a new one).",
@@ -2448,7 +2497,7 @@
   },
   "repost_dates": {
    "doc": "The posted_date values those bumps landed on, separated by ';'.",
-   "nulls": 220
+   "nulls": 253
   },
   "sources": {
    "doc": "Which fetchers saw it (greenhouse, comeet, scrape, ...), separated by ';'.",
@@ -2469,7 +2518,7 @@
   },
   "years_experience": {
    "doc": "Years of experience asked for, read from the DESCRIPTION text. Empty when the text does not say.",
-   "nulls": 71
+   "nulls": 76
   },
   "family": {
    "doc": "Role family, from title first and the opening of the description second.",
@@ -2496,7 +2545,7 @@
   },
   "degree_level": {
    "doc": "Highest degree the posting requires or prefers.",
-   "nulls": 134,
+   "nulls": 155,
    "enum": {
     "PhD": "highest degree the posting names",
     "MSc": "highest degree the posting names",
@@ -2505,7 +2554,7 @@
   },
   "degree_status": {
    "doc": "Whether that degree is required or merely preferred.",
-   "nulls": 134,
+   "nulls": 155,
    "enum": {
     "required": "stated as a requirement",
     "preferred": "stated as an advantage"
@@ -2513,7 +2562,7 @@
   },
   "degree_fields": {
    "doc": "Fields of study named alongside it, separated by ';'.",
-   "nulls": 179,
+   "nulls": 203,
    "enum": {
     "CS": "field of study named alongside the degree",
     "Industrial Eng.": "field of study named alongside the degree",
@@ -2529,7 +2578,7 @@
   },
   "ai": {
    "doc": "How the posting expects AI to be used, separated by ';'. Empty when AI is not mentioned.",
-   "nulls": 202,
+   "nulls": 238,
    "enum": {
     "AI for efficiency": "Expected to use AI tools (Copilot, ChatGPT, Cursor…) to work faster",
     "AI for automation": "Using AI to automate processes and workflows",
@@ -2539,14 +2588,15 @@
   },
   "skills": {
    "doc": "Every skill found in title+description, separated by ';', in extraction order.",
-   "nulls": 14
+   "nulls": 16
   },
   "class_decision": {
    "doc": "The classifier's verdict on the role when it was last judged.",
    "nulls": 0,
    "enum": {
     "accept": "judged an analytics role in Israel",
-    "reject": "judged not one"
+    "reject": "judged not one",
+    "legacy": "pre-classifier-era closed row, never published; carries a dated provenance annotation, not a judgment"
    }
   },
   "class_path": {
@@ -2580,19 +2630,19 @@
   },
   "description_blocker": {
    "doc": "Why a weak text (description_quality snippet/none) is structurally hard to complete, or empty. Recorded verdicts (jd-text's matched.jd_why, 'structural:*') verbatim; else derived: 'gone' (the posting 404s on the employer's own board), 'unfillable:<why>' (a host no rung we own can read), 'listing-page' (the only address we hold is a shared listing, not the posting's own). Under the live policy (meta description_text.blocked.policy — 'exclude' since the operator's 2026-09-01 ruling) a blocked row is excluded from this file with its reason counted in the meta; a weak row with NO blocker is pending a fill and stays; the archive keeps history either way.",
-   "nulls": 290
+   "nulls": 326
   },
   "sector": {
    "doc": "Company sector (firmographics).",
-   "nulls": 37
+   "nulls": 52
   },
   "sub_sector": {
    "doc": "Narrower niche (firmographics, free text).",
-   "nulls": 37
+   "nulls": 52
   },
   "stage": {
    "doc": "Company stage (firmographics).",
-   "nulls": 38,
+   "nulls": 53,
    "enum": {
     "acquired-by-bigtech": "company stage, as researched (firmographics)",
     "early-private": "company stage, as researched (firmographics)",
@@ -2603,11 +2653,11 @@
   },
   "stage_note": {
    "doc": "Ticker or acquisition note behind that stage.",
-   "nulls": 38
+   "nulls": 53
   },
   "size_band": {
    "doc": "Headcount band (firmographics).",
-   "nulls": 38,
+   "nulls": 53,
    "enum": {
     "S": "under 200 employees globally",
     "M": "200-1,000",
@@ -2617,27 +2667,27 @@
   },
   "employees_global": {
    "doc": "Global headcount, all sites (firmographics).",
-   "nulls": 55
+   "nulls": 70
   },
   "founded": {
    "doc": "Year founded (firmographics).",
-   "nulls": 51
+   "nulls": 67
   },
   "business_model": {
    "doc": "How the company earns money (firmographics, free text).",
-   "nulls": 37
+   "nulls": 52
   },
   "customer_type": {
    "doc": "Who buys from it (firmographics, free text).",
-   "nulls": 37
+   "nulls": 52
   },
   "il_center": {
    "doc": "Its main Israeli site(s) (firmographics).",
-   "nulls": 37
+   "nulls": 52
   },
   "firmo_as_of": {
    "doc": "The date those company facts were researched.",
-   "nulls": 37
+   "nulls": 52
   },
   "firmo_match": {
    "doc": "How the company facts were matched to this row's company_registry (the brand in `company` renders only on an exact match).",
@@ -2650,35 +2700,35 @@
   },
   "skills_bi": {
    "doc": "Skills of category 'bi' only, separated by ';' — group by this without parsing.",
-   "nulls": 133
+   "nulls": 159
   },
   "skills_query": {
    "doc": "Skills of category 'query' only, separated by ';' — group by this without parsing.",
-   "nulls": 98
+   "nulls": 109
   },
   "skills_de": {
    "doc": "Skills of category 'de' only, separated by ';' — group by this without parsing.",
-   "nulls": 198
+   "nulls": 221
   },
   "skills_pa": {
    "doc": "Skills of category 'pa' only, separated by ';' — group by this without parsing.",
-   "nulls": 244
+   "nulls": 274
   },
   "skills_prog": {
    "doc": "Skills of category 'prog' only, separated by ';' — group by this without parsing.",
-   "nulls": 171
+   "nulls": 190
   },
   "skills_method": {
    "doc": "Skills of category 'method' only, separated by ';' — group by this without parsing.",
-   "nulls": 103
+   "nulls": 118
   },
   "skills_cloud": {
    "doc": "Skills of category 'cloud' only, separated by ';' — group by this without parsing.",
-   "nulls": 257
+   "nulls": 290
   },
   "skills_lang": {
    "doc": "Skills of category 'lang' only, separated by ';' — group by this without parsing.",
-   "nulls": 184
+   "nulls": 209
   }
  }
 }
