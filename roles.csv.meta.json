@@ -3,44 +3,44 @@
  "download_url": null,
  "raw_url": null,
  "published_on_pages": false,
- "generated_at": "2026-10-22T01:38:43Z",
- "run_date": "2026-10-22",
- "rows": 326,
+ "generated_at": "2026-10-23T10:45:53Z",
+ "run_date": "2026-10-23",
+ "rows": 330,
  "one_row_per": "role — an opening at one employer under one title, kept forever once seen",
  "window": {
   "days": 90,
   "basis": "last_seen",
-  "start": "2026-07-25",
-  "end": "2026-10-22",
-  "rule": "2026-07-25 <= last_seen <= 2026-10-22, both inclusive (90 days) — the role was seen open on its employer's own careers board on some day in that range",
+  "start": "2026-07-26",
+  "end": "2026-10-23",
+  "rule": "2026-07-26 <= last_seen <= 2026-10-23, both inclusive (90 days) — the role was seen open on its employer's own careers board on some day in that range",
   "fully_covered": false,
-  "note": "ASPIRATIONAL: this store's earliest observation is 2026-08-16, which is AFTER the window start 2026-07-25. Any absence of roles before 2026-08-16 is OUR blindness, not the market's — the pipeline was not yet watching. Do not read the shape of the first days as a trend."
+  "note": "ASPIRATIONAL: this store's earliest observation is 2026-08-16, which is AFTER the window start 2026-07-26. Any absence of roles before 2026-08-16 is OUR blindness, not the market's — the pipeline was not yet watching. Do not read the shape of the first days as a trend."
  },
  "classifier_contract": {
   "live": "v3.0a439b16",
-  "rows_current": 326,
+  "rows_current": 330,
   "rows_stale": 0,
   "rows_unknown": 0,
   "note": "rows_unknown is not a defect in the row: it is a cell stamped before the contract was recorded (2026-09-11), or a verdict served from the classifier cache without the seam reporting which contract answered. It means 'we cannot say', which is the honest reading and not 'stale'."
  },
  "store": {
-  "records": 554,
+  "records": 567,
   "renamed": [],
   "renamed_note": "a role_id changes only when a card-blob title is canonicalised into the role's name; the record keeps its first_seen, episodes, emailed history and classifier verdict",
   "by_status": {
-   "closed": 169,
-   "open": 200,
-   "superseded": 3,
-   "withdrawn": 182
+   "closed": 170,
+   "open": 203,
+   "superseded": 4,
+   "withdrawn": 190
   },
   "earliest_first_seen": "2026-08-16",
   "earliest_recorded_run": "2026-09-28",
   "retention": "nothing is ever deleted; a wrong row becomes superseded or purged and keeps its line"
  },
  "excluded": {
-  "superseded": 3,
+  "superseded": 4,
   "purged": 0,
-  "withdrawn": 182,
+  "withdrawn": 190,
   "outside_window": 0,
   "undatable": 0,
   "note": "superseded = the same posting also fetched under a second company name, kept once. purged = the COMPANY was never an employer (a registry row that points at an aggregator; a name intake rejected as an agency). withdrawn = the employer is real but THIS posting was never in scope (not in Israel, or not this employer's) — it was published in error and is listed under `removed` with its reason and the days it was public. Rows that aged out of the window are not excluded: they are in roles_archive.csv."
@@ -220,6 +220,19 @@
    "published_in_roles_csv": {
     "from": "2026-09-28",
     "to": "2026-09-30"
+   }
+  },
+  {
+   "role_id": "amazon web services aws|sr gtm ssa analytics emea gtm data and ai specialists solutions architecture",
+   "company": "Amazon Web Services (AWS)",
+   "title": "Sr GTM SSA Analytics, EMEA GTM Data and AI Specialists Solutions Architecture",
+   "status": "withdrawn",
+   "reason": "Out of scope on full-duty review: pre-sales GTM Specialist Solutions Architect in AWS Sales (WWSO/SMGS). Duties are customer-facing sales enablement (voice-of-customer to product teams, field enablement materials, GTM strategy support), not data/BI/analytics work. Accepted via stale cached verdict; title/skills keywords only.",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
    }
   },
   {
@@ -546,6 +559,19 @@
    "published_in_roles_csv": null
   },
   {
+   "role_id": "check point|cyber threat intelligence analyst french speaker",
+   "company": "Check Point Software",
+   "title": "Cyber Threat Intelligence Analyst - French speaker",
+   "status": "withdrawn",
+   "reason": "Out of scope: customer-facing cyber threat intelligence production (OSINT/WEBINT gathering, threat-actor investigation, actionable intelligence alerts/reports for ERM/Cyberint customers, source/avatar development), not a data/BI analytics role; same policy family as the KELA TI withdrawal",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "checkout com|fraud data scientist",
    "company": "Checkout.com",
    "title": "Fraud Data Scientist",
@@ -781,16 +807,29 @@
    }
   },
   {
+   "role_id": "eon io|senior research scientist ai data systems",
+   "company": "Eon.io",
+   "title": "Senior Research Scientist, AI & Data Systems",
+   "status": "withdrawn",
+   "reason": "Out of scope: ML/research role (Senior Research Scientist, AI & Data Systems; PhD required; research-track, not analytics delivery). Established exclusion scope per user Oct15 steering (technical ML/LLM dev/training/research must not dominate eligible job) enforced by parent ruling 2026-10-23 04:44. Emailed 2026-10-22 (history unchanged, not re-marked); held from board publication pending revalidation.",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "eon|senior research scientist ai data systems",
    "company": "Eon",
    "title": "Senior Research Scientist, AI & Data Systems",
    "status": "withdrawn",
-   "reason": "not analytics: research-scientist track - duties are publishing peer-reviewed research and patents across query engines/storage/IR-RAG/LLM-eval; completed PhD and sustained publication record required",
-   "on": "2026-10-20",
+   "reason": "Out of scope: ML/research role - twin posting of eon io|senior research scientist ai data systems (render title-twin Eon/Eon.io); same established ML/research-role exclusion applied consistently to both rows.",
+   "on": "2026-10-23",
    "by": "human",
    "published_in_roles_csv": {
     "from": "2026-10-20",
-    "to": "2026-10-20"
+    "to": "2026-10-23"
    }
   },
   {
@@ -1029,6 +1068,19 @@
    }
   },
   {
+   "role_id": "immunai|senior scientist scientist ii systems immunology",
+   "company": "Immunai",
+   "title": "Senior Scientist / Scientist II, Systems Immunology",
+   "status": "withdrawn",
+   "reason": "Out of scope on full-duty review: research-scientist role anchored on a required immunology PhD and immunology-SME duties (literature review, advising computational teams on immunology); data analysis is instrumental to drug-development science. Consistent with established research-scientist exclusions.",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-23",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "infinitylabs r d|ai researcher data scientist entry level quantitative stem",
    "company": "InfinityLabs R&D",
    "title": "AI Researcher & Data Scientist - Entry Level (Quantitative STEM)",
@@ -1085,12 +1137,12 @@
    "company": "Istra Research",
    "title": "Quantitative Data Scientist",
    "status": "withdrawn",
-   "reason": "not analytics: HFT quant-research track - duties are researching/developing trading strategies and algorithms (ML/signal processing/data mining) at an algo-trading firm; summa cum laude + C++ profile",
-   "on": "2026-10-20",
+   "reason": "Out of scope: ML/quant research role, not analytics delivery. Established ML/research-role exclusion scope (user Oct15 steering; parent ruling 2026-10-23 04:44). Emailed 2026-09-27 (history unchanged); repeated reposts since; held from board publication pending revalidation.",
+   "on": "2026-10-23",
    "by": "human",
    "published_in_roles_csv": {
     "from": "2026-09-27",
-    "to": "2026-10-20"
+    "to": "2026-10-23"
    }
   },
   {
@@ -1156,6 +1208,32 @@
    "published_in_roles_csv": {
     "from": "2026-09-30",
     "to": "2026-09-30"
+   }
+  },
+  {
+   "role_id": "kela cyber threat intelligence|threat intelligence analyst",
+   "company": "KELA - Cyber Threat Intelligence",
+   "title": "Threat Intelligence Analyst",
+   "status": "withdrawn",
+   "reason": "Out of scope on full-duty review: career threat-intelligence role (requires 3+ yrs as TI analyst); deliverable is intelligence production for security teams (JD: 'support intelligence production'), same excluded family as the Shabak intelligence-production rulings, not data/BI/analytics work.",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-23",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "kela|threat intelligence analyst",
+   "company": "KELA",
+   "title": "Threat intelligence Analyst",
+   "status": "withdrawn",
+   "reason": "Out of scope: comeet twin posting of the withdrawn KELA Threat Intelligence Analyst (linkedin 4482486224). Identical duties (threat-landscape monitoring, OSINT/dark-web research, intelligence production for security teams). Same role, same full-duty ruling; twin-posting withdrawal per Eon precedent.",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1778,6 +1856,32 @@
    }
   },
   {
+   "role_id": "shabak israeli security agency career|arabic intelligence content analyst no arabic required",
+   "company": "Shabak - Israeli Security Agency - Career",
+   "title": "Arabic Intelligence Content Analyst (No Arabic Required)",
+   "status": "withdrawn",
+   "reason": "Out of scope on full-duty review (parent directive 05:33): operational intelligence production from Arabic-language sources; 20-month training incl. residential Arabic course; 5-year civil-service commitment. Not data-analytics work. Same scope family as withdrawn Desk Officer.",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "shabak israeli security agency career|operational intelligence analyst desk officer",
+   "company": "Shabak - Israeli Security Agency - Career",
+   "title": "Operational Intelligence Analyst (Desk Officer)",
+   "status": "withdrawn",
+   "reason": "Out of scope on full-duty review: intelligence officer role - duties are intelligence assessment, real-time operational decision support, direction/coordination of intelligence collection and security operations; 8-month agency training, placement by the agency, non-standard hours. Not data-analytics work; Israel location + analyst title alone does not establish analytics scope (parent ruling 2026-10-23 04:44).",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "shortical|applied data scientist",
    "company": "Shortical",
    "title": "Applied Data Scientist",
@@ -2335,24 +2439,24 @@
  "archive": {
   "file": "roles_archive.csv",
   "rows": 0,
-  "rule": "status open or closed AND last_seen < 2026-07-25 — every role the window has aged out, same columns, regenerated whole from the ledger each run",
+  "rule": "status open or closed AND last_seen < 2026-07-26 — every role the window has aged out, same columns, regenerated whole from the ledger each run",
   "raw_url": null,
   "download_url": null,
   "published_on_pages": false
  },
  "reconciliation": {
-  "rows": 326,
+  "rows": 330,
   "archived": 0,
-  "superseded": 3,
+  "superseded": 4,
   "purged": 0,
-  "withdrawn": 182,
+  "withdrawn": 190,
   "outside_window": 0,
   "undatable": 0,
   "unreadable": 0,
   "blocked_excluded": 7,
   "pending_excluded": 28,
   "unjudged_refused": 8,
-  "store_records": 554,
+  "store_records": 567,
   "identity": "rows + archived + superseded + purged + withdrawn + outside_window + undatable + unreadable + blocked_excluded + pending_excluded + unjudged_refused == store_records",
   "holds": true
  },
@@ -2395,7 +2499,7 @@
    "description_blocker"
   ],
   "quality": {
-   "jd": 326,
+   "jd": 330,
    "snippet": 0,
    "none": 0,
    "unmeasured": 0,
@@ -2477,7 +2581,7 @@
   },
   "closed_on": {
    "doc": "The day we recorded it closed. Empty while open.",
-   "nulls": 184
+   "nulls": 188
   },
   "emailed": {
    "doc": "true if this role went out in a daily digest email.",
@@ -2485,7 +2589,7 @@
   },
   "emailed_on": {
    "doc": "The date it was first emailed. Empty if never emailed.",
-   "nulls": 125
+   "nulls": 131
   },
   "episodes": {
    "doc": "How many separate spells we have seen this role open (a reappearance after an absence starts a new one).",
@@ -2497,7 +2601,7 @@
   },
   "repost_dates": {
    "doc": "The posted_date values those bumps landed on, separated by ';'.",
-   "nulls": 253
+   "nulls": 258
   },
   "sources": {
    "doc": "Which fetchers saw it (greenhouse, comeet, scrape, ...), separated by ';'.",
@@ -2545,7 +2649,7 @@
   },
   "degree_level": {
    "doc": "Highest degree the posting requires or prefers.",
-   "nulls": 155,
+   "nulls": 157,
    "enum": {
     "PhD": "highest degree the posting names",
     "MSc": "highest degree the posting names",
@@ -2554,7 +2658,7 @@
   },
   "degree_status": {
    "doc": "Whether that degree is required or merely preferred.",
-   "nulls": 155,
+   "nulls": 157,
    "enum": {
     "required": "stated as a requirement",
     "preferred": "stated as an advantage"
@@ -2562,7 +2666,7 @@
   },
   "degree_fields": {
    "doc": "Fields of study named alongside it, separated by ';'.",
-   "nulls": 203,
+   "nulls": 206,
    "enum": {
     "CS": "field of study named alongside the degree",
     "Industrial Eng.": "field of study named alongside the degree",
@@ -2578,7 +2682,7 @@
   },
   "ai": {
    "doc": "How the posting expects AI to be used, separated by ';'. Empty when AI is not mentioned.",
-   "nulls": 238,
+   "nulls": 224,
    "enum": {
     "AI for efficiency": "Expected to use AI tools (Copilot, ChatGPT, Cursor…) to work faster",
     "AI for automation": "Using AI to automate processes and workflows",
@@ -2588,7 +2692,7 @@
   },
   "skills": {
    "doc": "Every skill found in title+description, separated by ';', in extraction order.",
-   "nulls": 16
+   "nulls": 15
   },
   "class_decision": {
    "doc": "The classifier's verdict on the role when it was last judged.",
@@ -2630,19 +2734,19 @@
   },
   "description_blocker": {
    "doc": "Why a weak text (description_quality snippet/none) is structurally hard to complete, or empty. Recorded verdicts (jd-text's matched.jd_why, 'structural:*') verbatim; else derived: 'gone' (the posting 404s on the employer's own board), 'unfillable:<why>' (a host no rung we own can read), 'listing-page' (the only address we hold is a shared listing, not the posting's own). Under the live policy (meta description_text.blocked.policy — 'exclude' since the operator's 2026-09-01 ruling) a blocked row is excluded from this file with its reason counted in the meta; a weak row with NO blocker is pending a fill and stays; the archive keeps history either way.",
-   "nulls": 326
+   "nulls": 330
   },
   "sector": {
    "doc": "Company sector (firmographics).",
-   "nulls": 52
+   "nulls": 53
   },
   "sub_sector": {
    "doc": "Narrower niche (firmographics, free text).",
-   "nulls": 52
+   "nulls": 53
   },
   "stage": {
    "doc": "Company stage (firmographics).",
-   "nulls": 53,
+   "nulls": 54,
    "enum": {
     "acquired-by-bigtech": "company stage, as researched (firmographics)",
     "early-private": "company stage, as researched (firmographics)",
@@ -2653,11 +2757,11 @@
   },
   "stage_note": {
    "doc": "Ticker or acquisition note behind that stage.",
-   "nulls": 53
+   "nulls": 54
   },
   "size_band": {
    "doc": "Headcount band (firmographics).",
-   "nulls": 53,
+   "nulls": 54,
    "enum": {
     "S": "under 200 employees globally",
     "M": "200-1,000",
@@ -2667,27 +2771,27 @@
   },
   "employees_global": {
    "doc": "Global headcount, all sites (firmographics).",
-   "nulls": 70
+   "nulls": 72
   },
   "founded": {
    "doc": "Year founded (firmographics).",
-   "nulls": 67
+   "nulls": 69
   },
   "business_model": {
    "doc": "How the company earns money (firmographics, free text).",
-   "nulls": 52
+   "nulls": 53
   },
   "customer_type": {
    "doc": "Who buys from it (firmographics, free text).",
-   "nulls": 52
+   "nulls": 53
   },
   "il_center": {
    "doc": "Its main Israeli site(s) (firmographics).",
-   "nulls": 52
+   "nulls": 53
   },
   "firmo_as_of": {
    "doc": "The date those company facts were researched.",
-   "nulls": 52
+   "nulls": 53
   },
   "firmo_match": {
    "doc": "How the company facts were matched to this row's company_registry (the brand in `company` renders only on an exact match).",
@@ -2704,31 +2808,31 @@
   },
   "skills_query": {
    "doc": "Skills of category 'query' only, separated by ';' — group by this without parsing.",
-   "nulls": 109
+   "nulls": 107
   },
   "skills_de": {
    "doc": "Skills of category 'de' only, separated by ';' — group by this without parsing.",
-   "nulls": 221
+   "nulls": 225
   },
   "skills_pa": {
    "doc": "Skills of category 'pa' only, separated by ';' — group by this without parsing.",
-   "nulls": 274
+   "nulls": 276
   },
   "skills_prog": {
    "doc": "Skills of category 'prog' only, separated by ';' — group by this without parsing.",
-   "nulls": 190
+   "nulls": 192
   },
   "skills_method": {
    "doc": "Skills of category 'method' only, separated by ';' — group by this without parsing.",
-   "nulls": 118
+   "nulls": 116
   },
   "skills_cloud": {
    "doc": "Skills of category 'cloud' only, separated by ';' — group by this without parsing.",
-   "nulls": 290
+   "nulls": 295
   },
   "skills_lang": {
    "doc": "Skills of category 'lang' only, separated by ';' — group by this without parsing.",
-   "nulls": 209
+   "nulls": 212
   }
  }
 }
