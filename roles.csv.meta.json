@@ -3,9 +3,9 @@
  "download_url": null,
  "raw_url": null,
  "published_on_pages": false,
- "generated_at": "2026-10-23T10:45:53Z",
+ "generated_at": "2026-10-23T11:54:10Z",
  "run_date": "2026-10-23",
- "rows": 330,
+ "rows": 270,
  "one_row_per": "role — an opening at one employer under one title, kept forever once seen",
  "window": {
   "days": 90,
@@ -18,7 +18,7 @@
  },
  "classifier_contract": {
   "live": "v3.0a439b16",
-  "rows_current": 330,
+  "rows_current": 270,
   "rows_stale": 0,
   "rows_unknown": 0,
   "note": "rows_unknown is not a defect in the row: it is a cell stamped before the contract was recorded (2026-09-11), or a verdict served from the classifier cache without the seam reporting which contract answered. It means 'we cannot say', which is the honest reading and not 'stale'."
@@ -29,9 +29,9 @@
   "renamed_note": "a role_id changes only when a card-blob title is canonicalised into the role's name; the record keeps its first_seen, episodes, emailed history and classifier verdict",
   "by_status": {
    "closed": 170,
-   "open": 203,
+   "open": 143,
    "superseded": 4,
-   "withdrawn": 190
+   "withdrawn": 250
   },
   "earliest_first_seen": "2026-08-16",
   "earliest_recorded_run": "2026-09-28",
@@ -40,7 +40,7 @@
  "excluded": {
   "superseded": 4,
   "purged": 0,
-  "withdrawn": 190,
+  "withdrawn": 250,
   "outside_window": 0,
   "undatable": 0,
   "note": "superseded = the same posting also fetched under a second company name, kept once. purged = the COMPANY was never an employer (a registry row that points at an aggregator; a name intake rejected as an agency). withdrawn = the employer is real but THIS posting was never in scope (not in Israel, or not this employer's) — it was published in error and is listed under `removed` with its reason and the days it was public. Rows that aged out of the window are not excluded: they are in roles_archive.csv."
@@ -148,6 +148,45 @@
    }
   },
   {
+   "role_id": "aleph farms|jr scientist cell line and media development",
+   "company": "Aleph Farms",
+   "title": "Jr. Scientist - Cell line and Media Development",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (wet-lab biology research): wet-lab biology research",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "alice formerly activefence|fraud threat analyst",
+   "company": "Alice (Formerly ActiveFence)",
+   "title": "Fraud Threat Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (intel-production): fraud investigations/OSINT/darknet monitoring + intel reports (KELA family)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "alice formerly activefence|technical fraud threat analyst",
+   "company": "Alice (Formerly ActiveFence)",
+   "title": "Technical Fraud Threat Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (intel-production): fraud research tooling/investigations",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "alice io|data science engineering manager",
    "company": "Alice IO",
    "title": "Data Science Engineering Manager",
@@ -246,6 +285,19 @@
    "published_in_roles_csv": {
     "from": "2026-09-27",
     "to": "2026-10-15"
+   }
+  },
+  {
+   "role_id": "amazon|soc power analysis and optimization engineer graviton team",
+   "company": "Amazon",
+   "title": "SoC Power Analysis and Optimization Engineer, Graviton Team",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (hardware): SoC chip power engineering",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
    }
   },
   {
@@ -354,6 +406,19 @@
    "published_in_roles_csv": {
     "from": "2026-10-01",
     "to": "2026-10-01"
+   }
+  },
+  {
+   "role_id": "audiocodes|sales manager israel meeting insights",
+   "company": "AudioCodes",
+   "title": "Sales Manager Israel – Meeting Insights",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (sales role): sales role",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
    }
   },
   {
@@ -500,6 +565,19 @@
    }
   },
   {
+   "role_id": "brightdata|secops analyst",
+   "company": "brightdata",
+   "title": "SecOps Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (security-operations): SOC incident ownership, AI-SOC validation — not analytics",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "bylith|product analyst",
    "company": "Bylith",
    "title": "Product Analyst",
@@ -557,6 +635,19 @@
    "on": "2026-09-01",
    "by": "human",
    "published_in_roles_csv": null
+  },
+  {
+   "role_id": "chainalysis|intelligence analyst threat hunter",
+   "company": "Chainalysis",
+   "title": "Intelligence Analyst - Threat Hunter",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (intel-production): scam/threat research, dark web",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
   },
   {
    "role_id": "check point|cyber threat intelligence analyst french speaker",
@@ -784,6 +875,32 @@
    }
   },
   {
+   "role_id": "discount bank|מנהל ת פרויקטים בפיתוח ראש ת צוות במחלקת דאטה תשתיות ופיתוח חטיבת טכנולוגיות",
+   "company": "Discount Bank",
+   "title": "מנהל.ת פרויקטים בפיתוח ראש.ת צוות במחלקת דאטה תשתיות ופיתוח - חטיבת טכנולוגיות",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (platform-ops): DataOps/production data platform team lead",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "drs rada|radar performance analyst",
+   "company": "DRS RADA Technologies",
+   "title": "Radar Performance Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: R&D engineering analysis of radar algorithms (signal processing, MATLAB)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "edikted|retail data analyst",
    "company": "Edikted",
    "title": "Retail Data Analyst",
@@ -792,6 +909,19 @@
    "on": "2026-09-11",
    "by": "human",
    "published_in_roles_csv": null
+  },
+  {
+   "role_id": "eleos health|senior data scientist",
+   "company": "Eleos Health",
+   "title": "Senior Data Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (LLM-engineering): production LLM applications, AI capabilities end-to-end",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-06",
+    "to": "2026-10-23"
+   }
   },
   {
    "role_id": "enlight renewable energy ltd enlt|performance data analyst",
@@ -804,6 +934,19 @@
    "published_in_roles_csv": {
     "from": "2026-10-12",
     "to": "2026-10-12"
+   }
+  },
+  {
+   "role_id": "enlight renewable energy|director of data center strategy development",
+   "company": "Enlight Renewable Energy",
+   "title": "Director of Data Center Strategy & Development",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (physical data-center infrastructure strategy): physical data-center infrastructure strategy",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
    }
   },
   {
@@ -947,6 +1090,19 @@
    "published_in_roles_csv": null
   },
   {
+   "role_id": "flex|material planning analyst",
+   "company": "Flex LTD",
+   "title": "Material Planning Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: supply-chain operations/data-entry primary (POs, RMA, packing lists)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "fresenius medical care|financial planning analyst",
    "company": "Fresenius Medical Care",
    "title": "Financial Planning Analyst",
@@ -957,6 +1113,19 @@
    "published_in_roles_csv": {
     "from": "2026-09-28",
     "to": "2026-09-30"
+   }
+  },
+  {
+   "role_id": "gett|senior salesforce and business applications analyst",
+   "company": "Gett",
+   "title": "Senior Salesforce and Business Applications Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (Salesforce/business-apps admin+PM, not data analytics): Salesforce/business-apps admin+PM, not data analytics",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
    }
   },
   {
@@ -978,6 +1147,19 @@
    "on": "2026-09-18",
    "by": "human",
    "published_in_roles_csv": null
+  },
+  {
+   "role_id": "goren capital|investment banking associate analyst",
+   "company": "Goren Capital Group",
+   "title": "Investment Banking Associate/ Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (corporate-finance): IB modeling/valuation/deal execution",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
   },
   {
    "role_id": "guardio|senior bi engineer",
@@ -1013,6 +1195,58 @@
    "published_in_roles_csv": {
     "from": "2026-09-27",
     "to": "2026-09-29"
+   }
+  },
+  {
+   "role_id": "honeycomb insurance|senior data science researcher",
+   "company": "Honeycomb Insurance",
+   "title": "Senior Data Science Researcher",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (ML-research-production): applied research to production models",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "hp|head of data it strategy graphics solutions business",
+   "company": "HP",
+   "title": "Head of Data & IT Strategy - Graphics Solutions Business",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (platform/IT-strategy): data engineering team + IT strategy, not insight analytics (BORDERLINE)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "hsbc|it business analyst",
+   "company": "HSBC",
+   "title": "IT Business Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: IT business analysis: BRD/user stories/system implementation, not data analytics",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "hunthead|economic analyst",
+   "company": "HUNTHEAD",
+   "title": "Economic Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: economic/regulatory policy research and consulting, not data analytics",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1081,6 +1315,32 @@
    }
   },
   {
+   "role_id": "in house health|data science team lead",
+   "company": "In-House Health",
+   "title": "Data Science Team Lead",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (ML-production): prediction engine owned end-to-end to production",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "in house health|senior data scientist",
+   "company": "In-House Health",
+   "title": "Senior Data Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (ML-production): prediction models to production",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "infinitylabs r d|ai researcher data scientist entry level quantitative stem",
    "company": "InfinityLabs R&D",
    "title": "AI Researcher & Data Scientist - Entry Level (Quantitative STEM)",
@@ -1091,6 +1351,19 @@
    "published_in_roles_csv": {
     "from": "2026-10-03",
     "to": "2026-10-03"
+   }
+  },
+  {
+   "role_id": "infotree global solutions|malware analyst",
+   "company": "Infotree Global Solutions",
+   "title": "Malware Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (security-research): malware analysis/signatures",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1130,6 +1403,19 @@
    "published_in_roles_csv": {
     "from": "2026-09-29",
     "to": "2026-09-29"
+   }
+  },
+  {
+   "role_id": "intuit|staff ai scientist foresight",
+   "company": "Intuit",
+   "title": "Staff AI scientist, Foresight",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (LLM-research): foundation models/agentic architectures, pretraining/SFT/RAG",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1198,6 +1484,19 @@
    }
   },
   {
+   "role_id": "justt|payment integrations analyst",
+   "company": "Justt",
+   "title": "Payment Integrations Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: data-integrations operations primary (mapping/normalizing/monitoring/RCA), analysis is incident triage",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "kamada|מנהל ת דאטה ואפליקציות ארגוניות is director",
    "company": "Kamada",
    "title": "מנהל/ת דאטה ואפליקציות ארגוניות (IS Director)",
@@ -1208,6 +1507,19 @@
    "published_in_roles_csv": {
     "from": "2026-09-30",
     "to": "2026-09-30"
+   }
+  },
+  {
+   "role_id": "kayhut|data team lead hands on",
+   "company": "KayHut",
+   "title": "Data Team Lead (Hands-on)",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (platform-engineering): cyber platform architecture/microservices/data pipelines lead",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1247,6 +1559,19 @@
    "published_in_roles_csv": null
   },
   {
+   "role_id": "kibeeri|senior ppc marketing analyst",
+   "company": "Kibeeri",
+   "title": "Senior PPC Marketing Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope per user 2026-10-23 (insight-BI only): full-JD: campaign strategy-to-execution ownership primary (marketing-ops)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "kimberly clark|sales analyst אנליסט ית מכירות צריפין",
    "company": "Kimberly-Clark",
    "title": "Sales Analyst- אנליסט.ית מכירות צריפין",
@@ -1257,6 +1582,32 @@
    "published_in_roles_csv": {
     "from": "2026-09-02",
     "to": "2026-10-16"
+   }
+  },
+  {
+   "role_id": "kla|configuration analyst",
+   "company": "KLA",
+   "title": "Configuration Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: product configuration/BOM/order management operations, not insight analytics",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "kla|research scientist",
+   "company": "KLA",
+   "title": "Research Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope per user 2026-10-23 (insight-BI only): full-JD: experimental physics R&D research",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1312,6 +1663,19 @@
    }
   },
   {
+   "role_id": "logica it|data scientist",
+   "company": "Logica-IT",
+   "title": "Data Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (ML-production): end-to-end DS to production deployment",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "longevity ai|data scientist",
    "company": "Longevity AI",
    "title": "Data Scientist",
@@ -1358,6 +1722,32 @@
    "published_in_roles_csv": {
     "from": "2026-09-27",
     "to": "2026-10-15"
+   }
+  },
+  {
+   "role_id": "max security|geopolitical intelligence analyst",
+   "company": "MAX Security",
+   "title": "Geopolitical Intelligence Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (intel-production): OSINT geopolitical intelligence reports for clients",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "max security|protective intelligence senior analyst",
+   "company": "MAX Security",
+   "title": "Protective Intelligence Senior Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (intel-production): client intelligence briefings, OSINT/WEBINT",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1413,6 +1803,45 @@
    }
   },
   {
+   "role_id": "merck healthcare|senior rwd scientist",
+   "company": "Merck Healthcare",
+   "title": "Senior RWD Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope per user 2026-10-23 (insight-BI only): full-JD: builds epidemiology software applications for researchers",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "mer|data scientist data ai",
+   "company": "MER Group",
+   "title": "Data Scientist, Data & AI",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (ML/AI-engineering): AI platforms, production AI solutions maintenance",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "micron|osint analyst remote tel aviv",
+   "company": "Micron",
+   "title": "OSINT Analyst - remote / Tel-Aviv",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (security-ops): OSINT exposure remediation/executive protection",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "microsoft|principal data science manager",
    "company": "Microsoft",
    "title": "Principal Data Science Manager",
@@ -1426,6 +1855,19 @@
    }
   },
   {
+   "role_id": "millennium|quantitative researcher",
+   "company": "Millennium",
+   "title": "Quantitative Researcher",
+   "status": "withdrawn",
+   "reason": "out-of-scope per user 2026-10-23 (insight-BI only): full-JD: quant pricing/risk library development (quant research)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "minute media|data scientist",
    "company": "Minute Media",
    "title": "Data Scientist",
@@ -1434,6 +1876,19 @@
    "on": "2026-09-02",
    "by": "human",
    "published_in_roles_csv": null
+  },
+  {
+   "role_id": "minute|data scientist",
+   "company": "Minute",
+   "title": "Data Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (ML-production): monetization models deployed to production",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
   },
   {
    "role_id": "mize|junior data scientist",
@@ -1472,6 +1927,19 @@
    "published_in_roles_csv": {
     "from": "2026-10-16",
     "to": "2026-10-16"
+   }
+  },
+  {
+   "role_id": "mobileye|data analytics project manager",
+   "company": "Mobileye",
+   "title": "Data Analytics Project Manager",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: JD-self-described data operations/PM: pipelines, onboarding, project execution",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-06",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1534,6 +2002,19 @@
    "published_in_roles_csv": {
     "from": "2026-10-08",
     "to": "2026-10-08"
+   }
+  },
+  {
+   "role_id": "nebius|special capabilities analyst",
+   "company": "Nebius",
+   "title": "Special Capabilities Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (intel-production): Global Intelligence team research coordination/assessments",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-08",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1641,6 +2122,19 @@
    }
   },
   {
+   "role_id": "pagayais|data science group lead",
+   "company": "Pagayais",
+   "title": "Data Science Group Lead",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: ML-production leadership: predictive modeling/optimization group for loan funding",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "palo alto networks|principal data scientist agent team cortex",
    "company": "Palo Alto Networks",
    "title": "Principal Data Scientist - Agent Team (Cortex)",
@@ -1651,6 +2145,19 @@
    "published_in_roles_csv": {
     "from": "2026-10-12",
     "to": "2026-10-12"
+   }
+  },
+  {
+   "role_id": "palo alto networks|principal senior data scientist llm agents",
+   "company": "Palo Alto Networks",
+   "title": "Principal/ Senior Data Scientist - LLM Agents",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (LLM-engineering): agentic LLM solutions design/deploy",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1716,6 +2223,19 @@
    }
   },
   {
+   "role_id": "penlink|web intelligence analyst",
+   "company": "penlink",
+   "title": "Web Intelligence Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (customer-success+OSINT demos — not analytics): customer-success+OSINT demos — not analytics",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "perion|treasury operations analyst parental leave",
    "company": "Perion",
    "title": "Treasury Operations Analyst (Parental leave)",
@@ -1726,6 +2246,19 @@
    "published_in_roles_csv": {
     "from": "2026-10-02",
     "to": "2026-10-02"
+   }
+  },
+  {
+   "role_id": "persona ly|marketing analyst",
+   "company": "Persona.ly",
+   "title": "Marketing Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope per user 2026-10-23 (insight-BI only): full-JD: owns campaign budget mgmt + UA optimization (marketing-ops)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1752,6 +2285,32 @@
    "published_in_roles_csv": {
     "from": "2026-09-29",
     "to": "2026-09-29"
+   }
+  },
+  {
+   "role_id": "play perfect|senior data scientist",
+   "company": "Play Perfect",
+   "title": "Senior Data Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (ML-production): models for production systems, deep learning required",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "playtika|data scientist",
+   "company": "Playtika",
+   "title": "Data Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: ML-production: model development/evaluation/deployment to live production, ML expertise",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-21",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1804,6 +2363,58 @@
    }
   },
   {
+   "role_id": "rapyd|financial operations analyst",
+   "company": "Rapyd",
+   "title": "Financial Operations Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: FinOps operations/project-management primary (treasury-ops exclusion precedent)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "real dev|ai solutions analyst",
+   "company": "REAL DEV INC",
+   "title": "AI Solutions Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: AI-output QA/customer demos without insight-BI primary (main ruling); NOTE shares workable URL 9188839C3E with financial solutions card",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-23",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "real dev|financial solutions business analyst",
+   "company": "REAL DEV INC",
+   "title": "Financial Solutions & Business Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: AI-output QA/customer demos without insight-BI primary (main ruling); NOTE shares workable URL 9188839C3E with financial solutions card",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "revolut|regulatory reporting manager",
+   "company": "Revolut",
+   "title": "Regulatory Reporting Manager",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: regulatory compliance reporting operations",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "riskified|staff data scientist",
    "company": "Riskified",
    "title": "Staff Data Scientist",
@@ -1827,6 +2438,19 @@
    "published_in_roles_csv": {
     "from": "2026-09-28",
     "to": "2026-09-29"
+   }
+  },
+  {
+   "role_id": "sciplay|data science and ai builder",
+   "company": "SciPlay",
+   "title": "Data Science and AI builder",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (ML-production): production-ready modeling solutions",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
    }
   },
   {
@@ -1892,6 +2516,19 @@
    "published_in_roles_csv": {
     "from": "2026-10-03",
     "to": "2026-10-15"
+   }
+  },
+  {
+   "role_id": "similarweb|data analyst",
+   "company": "Similarweb",
+   "title": "Data Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope per user 2026-10-23 (insight-BI only): full-JD: ground-truth/labeling + LLM/ML output QA ownership (AI data-QA)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-16",
+    "to": "2026-10-23"
    }
   },
   {
@@ -2006,6 +2643,32 @@
    }
   },
   {
+   "role_id": "tavily|data scientist",
+   "company": "Tavily",
+   "title": "Data Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (ML-production): ML models developed/deployed/monitored in production",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "teads|senior data scientist",
+   "company": "Teads",
+   "title": "Senior Data Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: ML-engineering: coding ML solutions in high-scale systems, recommender systems",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "teads|senior data scientist netanya",
    "company": "Teads",
    "title": "Senior Data Scientist Netanya",
@@ -2040,6 +2703,19 @@
    "on": "2026-09-02",
    "by": "human",
    "published_in_roles_csv": null
+  },
+  {
+   "role_id": "telus digital|online data analyst israel",
+   "company": "TELUS Digital",
+   "title": "Online Data Analyst - Israel",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: freelance AI-Community map/search rating gig, not an analytics role (source-qualified via live posting 17271777 + family twin description)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
   },
   {
    "role_id": "teva pharmaceuticals|data analytics ai solution architect",
@@ -2101,6 +2777,19 @@
    "published_in_roles_csv": {
     "from": "2026-09-29",
     "to": "2026-09-29"
+   }
+  },
+  {
+   "role_id": "transmit security|engineering team lead data science team",
+   "company": "Transmit Security",
+   "title": "Engineering Team Lead - Data Science Team",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (software-engineering): detection products engineering manager",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
    }
   },
   {
@@ -2182,6 +2871,19 @@
    }
   },
   {
+   "role_id": "veeva systems|data analyst pioneer",
+   "company": "Veeva Systems",
+   "title": "Data Analyst - Pioneer",
+   "status": "withdrawn",
+   "reason": "out-of-scope per user 2026-10-23 (insight-BI only): full-JD: data-platform UAT/data-quality/production-issue support (platform QA)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-28",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "veracyte|sr bioinformatics scientist israel",
    "company": "Veracyte, Inc.",
    "title": "Sr. Bioinformatics Scientist Israel",
@@ -2247,6 +2949,58 @@
    }
   },
   {
+   "role_id": "west pharmaceutical services|inventory logistics analyst",
+   "company": "West Pharmaceutical Services",
+   "title": "Inventory & Logistics Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: inventory/logistics operations primary (SAP transactions, cycle counts, MRB)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "wix|ai analyst",
+   "company": "Wix",
+   "title": "AI Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (LLM-data-ops): model training/eval data processes, prompt engineering for model evaluation",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-06",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "wix|performance marketing analyst",
+   "company": "Wix",
+   "title": "Performance Marketing Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope per user 2026-10-23 (insight-BI only): full-JD: owns paid campaign management across channels (marketing-ops)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-02",
+    "to": "2026-10-23"
+   }
+  },
+  {
+   "role_id": "wix|performance marketing analyst base44",
+   "company": "Wix",
+   "title": "Performance Marketing Analyst - Base44",
+   "status": "withdrawn",
+   "reason": "out-of-scope per user 2026-10-23 (insight-BI only): full-JD: leads paid UA campaigns management (marketing-ops)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-09-27",
+    "to": "2026-10-23"
+   }
+  },
+  {
    "role_id": "wix|treasury automation analyst",
    "company": "Wix",
    "title": "Treasury & Automation Analyst",
@@ -2270,6 +3024,19 @@
    "published_in_roles_csv": {
     "from": "2026-09-29",
     "to": "2026-09-29"
+   }
+  },
+  {
+   "role_id": "workday|ai data quality analyst",
+   "company": "Workday",
+   "title": "AI Data Quality Analyst",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit wave-2: AI-output evaluation/annotation ops without insight-BI primary (main ruling 2026-10-23)",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-14",
+    "to": "2026-10-23"
    }
   },
   {
@@ -2309,6 +3076,19 @@
    "published_in_roles_csv": {
     "from": "2026-10-05",
     "to": "2026-10-05"
+   }
+  },
+  {
+   "role_id": "yuval hr talent agency and advisory|senior data scientist",
+   "company": "Yuval HR - Talent agency and advisory",
+   "title": "Senior Data Scientist",
+   "status": "withdrawn",
+   "reason": "out-of-scope 2026-10-23 full-corpus audit (ML-production): recommendation/personalization models owned to production",
+   "on": "2026-10-23",
+   "by": "human",
+   "published_in_roles_csv": {
+    "from": "2026-10-22",
+    "to": "2026-10-23"
    }
   },
   {
@@ -2445,11 +3225,11 @@
   "published_on_pages": false
  },
  "reconciliation": {
-  "rows": 330,
+  "rows": 270,
   "archived": 0,
   "superseded": 4,
   "purged": 0,
-  "withdrawn": 190,
+  "withdrawn": 250,
   "outside_window": 0,
   "undatable": 0,
   "unreadable": 0,
@@ -2499,7 +3279,7 @@
    "description_blocker"
   ],
   "quality": {
-   "jd": 330,
+   "jd": 270,
    "snippet": 0,
    "none": 0,
    "unmeasured": 0,
@@ -2552,7 +3332,7 @@
   },
   "posted_date": {
    "doc": "The date the EMPLOYER states the role was posted. Empty when the board publishes none.",
-   "nulls": 19
+   "nulls": 18
   },
   "first_seen": {
    "doc": "The first day this pipeline ever saw the role, across all of its spells. Not a posting date.",
@@ -2581,7 +3361,7 @@
   },
   "closed_on": {
    "doc": "The day we recorded it closed. Empty while open.",
-   "nulls": 188
+   "nulls": 128
   },
   "emailed": {
    "doc": "true if this role went out in a daily digest email.",
@@ -2589,7 +3369,7 @@
   },
   "emailed_on": {
    "doc": "The date it was first emailed. Empty if never emailed.",
-   "nulls": 131
+   "nulls": 105
   },
   "episodes": {
    "doc": "How many separate spells we have seen this role open (a reappearance after an absence starts a new one).",
@@ -2601,7 +3381,7 @@
   },
   "repost_dates": {
    "doc": "The posted_date values those bumps landed on, separated by ';'.",
-   "nulls": 258
+   "nulls": 208
   },
   "sources": {
    "doc": "Which fetchers saw it (greenhouse, comeet, scrape, ...), separated by ';'.",
@@ -2622,7 +3402,7 @@
   },
   "years_experience": {
    "doc": "Years of experience asked for, read from the DESCRIPTION text. Empty when the text does not say.",
-   "nulls": 76
+   "nulls": 63
   },
   "family": {
    "doc": "Role family, from title first and the opening of the description second.",
@@ -2649,7 +3429,7 @@
   },
   "degree_level": {
    "doc": "Highest degree the posting requires or prefers.",
-   "nulls": 157,
+   "nulls": 134,
    "enum": {
     "PhD": "highest degree the posting names",
     "MSc": "highest degree the posting names",
@@ -2658,7 +3438,7 @@
   },
   "degree_status": {
    "doc": "Whether that degree is required or merely preferred.",
-   "nulls": 157,
+   "nulls": 134,
    "enum": {
     "required": "stated as a requirement",
     "preferred": "stated as an advantage"
@@ -2666,7 +3446,7 @@
   },
   "degree_fields": {
    "doc": "Fields of study named alongside it, separated by ';'.",
-   "nulls": 206,
+   "nulls": 173,
    "enum": {
     "CS": "field of study named alongside the degree",
     "Industrial Eng.": "field of study named alongside the degree",
@@ -2682,7 +3462,7 @@
   },
   "ai": {
    "doc": "How the posting expects AI to be used, separated by ';'. Empty when AI is not mentioned.",
-   "nulls": 224,
+   "nulls": 185,
    "enum": {
     "AI for efficiency": "Expected to use AI tools (Copilot, ChatGPT, Cursor…) to work faster",
     "AI for automation": "Using AI to automate processes and workflows",
@@ -2692,7 +3472,7 @@
   },
   "skills": {
    "doc": "Every skill found in title+description, separated by ';', in extraction order.",
-   "nulls": 15
+   "nulls": 8
   },
   "class_decision": {
    "doc": "The classifier's verdict on the role when it was last judged.",
@@ -2734,19 +3514,19 @@
   },
   "description_blocker": {
    "doc": "Why a weak text (description_quality snippet/none) is structurally hard to complete, or empty. Recorded verdicts (jd-text's matched.jd_why, 'structural:*') verbatim; else derived: 'gone' (the posting 404s on the employer's own board), 'unfillable:<why>' (a host no rung we own can read), 'listing-page' (the only address we hold is a shared listing, not the posting's own). Under the live policy (meta description_text.blocked.policy — 'exclude' since the operator's 2026-09-01 ruling) a blocked row is excluded from this file with its reason counted in the meta; a weak row with NO blocker is pending a fill and stays; the archive keeps history either way.",
-   "nulls": 330
+   "nulls": 270
   },
   "sector": {
    "doc": "Company sector (firmographics).",
-   "nulls": 53
+   "nulls": 40
   },
   "sub_sector": {
    "doc": "Narrower niche (firmographics, free text).",
-   "nulls": 53
+   "nulls": 40
   },
   "stage": {
    "doc": "Company stage (firmographics).",
-   "nulls": 54,
+   "nulls": 41,
    "enum": {
     "acquired-by-bigtech": "company stage, as researched (firmographics)",
     "early-private": "company stage, as researched (firmographics)",
@@ -2757,11 +3537,11 @@
   },
   "stage_note": {
    "doc": "Ticker or acquisition note behind that stage.",
-   "nulls": 54
+   "nulls": 41
   },
   "size_band": {
    "doc": "Headcount band (firmographics).",
-   "nulls": 54,
+   "nulls": 41,
    "enum": {
     "S": "under 200 employees globally",
     "M": "200-1,000",
@@ -2771,27 +3551,27 @@
   },
   "employees_global": {
    "doc": "Global headcount, all sites (firmographics).",
-   "nulls": 72
+   "nulls": 56
   },
   "founded": {
    "doc": "Year founded (firmographics).",
-   "nulls": 69
+   "nulls": 53
   },
   "business_model": {
    "doc": "How the company earns money (firmographics, free text).",
-   "nulls": 53
+   "nulls": 40
   },
   "customer_type": {
    "doc": "Who buys from it (firmographics, free text).",
-   "nulls": 53
+   "nulls": 40
   },
   "il_center": {
    "doc": "Its main Israeli site(s) (firmographics).",
-   "nulls": 53
+   "nulls": 40
   },
   "firmo_as_of": {
    "doc": "The date those company facts were researched.",
-   "nulls": 53
+   "nulls": 40
   },
   "firmo_match": {
    "doc": "How the company facts were matched to this row's company_registry (the brand in `company` renders only on an exact match).",
@@ -2804,35 +3584,35 @@
   },
   "skills_bi": {
    "doc": "Skills of category 'bi' only, separated by ';' — group by this without parsing.",
-   "nulls": 159
+   "nulls": 110
   },
   "skills_query": {
    "doc": "Skills of category 'query' only, separated by ';' — group by this without parsing.",
-   "nulls": 107
+   "nulls": 73
   },
   "skills_de": {
    "doc": "Skills of category 'de' only, separated by ';' — group by this without parsing.",
-   "nulls": 225
+   "nulls": 173
   },
   "skills_pa": {
    "doc": "Skills of category 'pa' only, separated by ';' — group by this without parsing.",
-   "nulls": 276
+   "nulls": 224
   },
   "skills_prog": {
    "doc": "Skills of category 'prog' only, separated by ';' — group by this without parsing.",
-   "nulls": 192
+   "nulls": 158
   },
   "skills_method": {
    "doc": "Skills of category 'method' only, separated by ';' — group by this without parsing.",
-   "nulls": 116
+   "nulls": 85
   },
   "skills_cloud": {
    "doc": "Skills of category 'cloud' only, separated by ';' — group by this without parsing.",
-   "nulls": 295
+   "nulls": 241
   },
   "skills_lang": {
    "doc": "Skills of category 'lang' only, separated by ';' — group by this without parsing.",
-   "nulls": 212
+   "nulls": 180
   }
  }
 }
